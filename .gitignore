@@ -4,3 +4,4 @@
 *.dvi
 *.ps
 *.pdf
+.*.sw[op]
