@@ -1,31 +1,30 @@
 <resume xmlns="urn:resume"
-        xmlns:xsi="http://www.w3.org/XMLSchema-instance"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="urn:resume resume.xsd">
-    <contact>
+    <header>
         <name>Bryan Matsuo</name>
-        <phone type="mobile">+1 801 671 2514</phone>
-        <email>bryan.matsuo@gmail.com</email>
-        <website label="GitHub">https://github.com/bmatuso</website>
-        <website label="LinkedIn">https://linkedin.com/in/bryanmatsuo</website>
-        <website label="Personal">http://bmats.co</website>
-    </contact>
+        <link href="https://github.com/bmatuso">GitHub</link>
+        <link href="https://linkedin.com/in/bryanmatsuo">LinkedIn</link>
+        <link href="http://bmats.co">Personal</link>
+        <contact>
+            <email>bryan.matsuo@gmail.com</email>
+            <phone>+1 801 671 2514</phone>
+        </contact>
+    </header>
     <objective>
-        I want to solve hard problems, build and scale backend systems,
-        and learn new skills with a talented group of motivated people.
+        <para>
+            I want to solve hard problems, build and scale backend systems,
+            and learn new skills with a talented group of motivated people.
+        </para>
     </objective>
-    <skills>
-        <skill>Shell Scripting</skill>
+    <skills category="Programming languages">
+        <skill>Bash</skill>
         <skill>Ruby on Rails</skill>
         <skill>Perl</skill>
         <skill>Python</skill>
-        <skill>Matlab/Matplotlib</skill>
+        <skill>Matlab</skill>
         <skill>Go</skill>
         <skill>Scala</skill>
-        <skill>Puppet</skill>
-        <skill>MongoDB</skill>
-        <skill>Redis</skill>
-        <skill>Zookeeper</skill>
-        <skill>SQL (Postgres)</skill>
         <skill>Functional Programming</skill>
         <skill>OAuth 2.0</skill>
         <skill>C/C++</skill>
@@ -33,72 +32,93 @@
         <skill>Ocaml</skill>
         <skill>Haskell</skill>
         <skill>Scala</skill>
+    </skills>
+    <skills category="Software">
+        <skill>Puppet</skill>
+        <skill>MongoDB</skill>
+        <skill>Redis</skill>
+        <skill>Zookeeper</skill>
+        <skill>Postgres</skill>
         <skill>Git</skill>
     </skills>
-    <intrests>
-        <interest type="work">Web architecture</interest>
-        <interest type="work">Distributed systems</interest>
-        <interest type="work">Dev Ops</interest>
-        <interest type="work">Client-side MV*</interest>
-        <interest type="personal">
+    <interests category="Techincal">
+        <interest>Web architecture</interest>
+        <interest>Distributed systems</interest>
+        <interest>Dev Ops</interest>
+        <interest>Client-side MV*</interest>
+    </interests>
+    <interests category="Personal">
+        <interest>
             Learning programming languages, exploring different problem solving
             mindsets and paradigms, and finding the best tools for different
             problems.
         </interest>
-        <interest type="personal">
+        <interest>
             Developing tools and automation workflows for home-entertainment
             system PCs, improving their integration with satellite devices
             (laptops, iDevices, etc.).
         </interest>
-        <interest type="personal">Soccer</interest>
-        <interest type="personal">Music</interest>
-        <interest type="personal">Backpacking</interest>
-    </intrests>
+        <interest>Soccer</interest>
+        <interest>Music</interest>
+        <interest>Backpacking</interest>
+    </interests>
     <history>
         <employment>
-            <organization>Janrain</organization>
-            <dates from="Feb 2012" to="present"/>
             <position>Software Engineer</position>
+            <employer>Janrain, Inc</employer>
+            <dates from="Feb 2012" to="present"/>
             <description>
-                After initially writing integration libraries for OAuth social
-                identity providers, I took over development on the primary
-                backend component in large-scale redesign for the core user
-                management product written in Ruby on Rails. I participated in
-                design discussions with product management, developed the
-                initial test framework still used for product QA, and was
-                responsible for most of the server-side coding involving
-                integrating internal services and building a processor for a
-                user management DSL. As more, larger customers were brought
-                on to the product I worked with operations and software
-                egineers from other teams to tune performance of our
-                infrastructure to meet the necessary. As that project shifted
-                from development to maintenence I've transitioned to a team
-                writing Scala web services to tackle infrastructure management
-                problems the faced by the company as it grows.
+                <para>
+                    After initially writing integration libraries for OAuth social
+                    identity providers, I took over development on the primary
+                    backend component in large-scale redesign for the core user
+                    management product written in Ruby on Rails. I participated in
+                    design discussions with product management, developed the
+                    initial test framework still used for product QA, and was
+                    responsible for most of the server-side coding involving
+                    integrating internal services and building a processor for a
+                    user management DSL. As more, larger customers were brought
+                    on to the product I worked with operations and software
+                    egineers from other teams to tune performance of our
+                    infrastructure to meet the necessary. As that project shifted
+                    from development to maintenence I've transitioned to a team
+                    writing Scala web services to tackle infrastructure management
+                    problems the faced by the company as it grows.
+                </para>
             </description>
         </employment>
         <employment>
-            <organization>LEEPS, Univ of California - Santa Cruz</organization>
-            <dates from="Apr 2011" to="Jul 2011"/>
             <position>Software Development (Contract)</position>
+            <employer>LEEPS, Univ of California - Santa Cruz</employer>
+            <dates from="Apr 2011" to="Jul 2011"/>
             <description>
-                I developed an open source, network-multiplayer game framework
-                for academic use in experimental economics in conjunction with
-                lead developer James Pettit. The real-time framework was
-                implemented in Python used Redis on the backend for consistent
-                state management and a JSON protocal for client communication.
-                There was also some GUI programming with GTK, Wx, and Matplotlib.
+                <para>
+                    I developed an open source, network-multiplayer game framework
+                    for academic use in experimental economics in conjunction with
+                    lead developer James Pettit. The real-time framework was
+                    implemented in Python used Redis on the backend for consistent
+                    state management and a JSON protocal for client communication.
+                    There was also some GUI programming with GTK, Wx, and Matplotlib.
+                </para>
             </description>
         </employment>
-        <education>
-            <organization>Univ of Califonia - Santa Cruz</organization>
-            <dates fram="Sep 2004" to="Mar 2009"/>
-            <degree type="BS" field="Computer Science"/>
-            <degree type="BA" field="Mathematics"/>
-            <items>
-                <item>Honors in Computer Science</item>
-                <item>Highest honors in Mathematics</item>
-            </items>
-        </education>
+        <academic>
+            <institution>Univ of Califonia - Santa Cruz</institution>
+            <dates from="Sep 2004" to="Mar 2009"/>
+            <concentration type="major">
+                <subject>Computer Science</subject>
+                <degree>BS</degree>
+            </concentration>
+            <concentration type="major">
+                <subject>Mathematics</subject>
+                <degree>BA</degree>
+            </concentration>
+            <achievement>
+                <title>Honors in Computer Science</title>
+            </achievement>
+            <achievement>
+                <title>Highest honors in Mathematics</title>
+            </achievement>
+        </academic>
     </history>
 </resume>

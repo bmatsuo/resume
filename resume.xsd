@@ -8,9 +8,9 @@
     <xs:complexType name="Resume">
         <xs:sequence>
             <xs:element name="header" type="Header"/>
-            <xs:element name="objective" type="Objective"/>
-            <xs:element name="skills" type="Skills"/>
-            <xs:element name="interests" type="Interests"/>
+            <xs:element name="objective" type="TextBody"/>
+            <xs:element name="skills" type="Skills" maxOccurs="unbounded"/>
+            <xs:element name="interests" type="Interests" maxOccurs="unbounded"/>
             <xs:element name="history" type="History"/>
         </xs:sequence>
     </xs:complexType>
@@ -30,27 +30,25 @@
         </xs:restriction>
     </xs:simpleType>
 
-    <xs:complexType name="Info">
-        <xs:complexContent>
+    <xs:complexType name="Link">
+        <xs:simpleContent>
             <xs:extension base="xs:string">
                 <xs:attribute name="href" type="HttpUri"/>
             </xs:extension>
-        </xs:complexContent>
+        </xs:simpleContent>
     </xs:complexType>
 
     <xs:complexType name="Contact">
         <xs:sequence>
-            <xs:element name="email" name="Email"/>
-            <xs:element name="phone" name="Phone"/>
-            <xs:element name="address" name="Address" minOccurs="0"/>
+            <xs:element name="email" type="Email"/>
+            <xs:element name="phone" type="Phone" minOccurs="0"/>
+            <xs:element name="address" type="Address" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
 
     <xs:complexType name="Address">
         <!-- TODO figure this shit out TODO -->
     </xs:complexType>
-
-    <xs:complexType name="Objective" type="TextBody"/>
 
     <xs:complexType name="Skills">
         <xs:sequence>
@@ -85,30 +83,30 @@
     </xs:complexType>
 
     <xs:complexType name="DateRange">
-        <xs:attribute name="from" type="xs:date"/>
-        <xs:attribute name="to" type="xs:date"/>
+        <!-- TODO tighten this down? -->
+        <xs:attribute name="from" type="xs:token"/>
+        <xs:attribute name="to" type="xs:token"/>
     </xs:complexType>
 
     <xs:complexType name="Academic">
         <xs:sequence>
             <xs:element name="institution" type="xs:token"/>
             <xs:element name="dates" type="DateRange"/>
-            <xs:element name="degree" type="Degree" maxOccurs="unbounded"/>
+            <xs:element name="concentration" type="AcademicConcentration" maxOccurs="unbounded"/>
             <xs:element name="achievement" type="AcademicAchievement" maxOccurs="unbounded"/>
-            <xs:element name="description" type="TextBody"/>
+            <xs:element name="description" type="TextBody" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
 
-    <xs:complexType name="Degree">
+    <xs:complexType name="AcademicConcentration">
         <xs:sequence>
             <xs:element name="subject" type="xs:token"/>
-            <xs:element name="description" type="Collapsed" minOccurs="0"/>
+            <xs:element name="degree" type="DegreeLevel"/>
         </xs:sequence>
-        <xs:attribute name="type" type="DegreeType"/>
-        <xs:attribute name="concentration" type="MajorMinor"/>
+        <xs:attribute name="type" type="MajorMinor"/>
     </xs:complexType>
 
-    <xs:simpleType name="DegreeType">
+    <xs:simpleType name="DegreeLevel">
         <xs:annotation>
             <xs:documentation xml:lang="en">
                 Generally BS, BA, but open to other values.
@@ -154,7 +152,7 @@
                 documents in this way.
             </xs:documentation>
         </xs:annotation>
-        <xs:restriction name="xs:string">
+        <xs:restriction base="xs:string">
             <xs:whiteSpace value="collapse"/>
         </xs:restriction>
     </xs:simpleType>
