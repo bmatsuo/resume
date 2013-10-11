@@ -1,0 +1,183 @@
+<!DOCTYPE resume PUBLIC "-//Sean Kelly//DTD Resume 1.5.1//EN"
+"http://xmlresume.sourceforge.net/dtd/resume.dtd">
+<resume>
+    <header>
+        <name>
+            <firstname>Bryan</firstname>
+            <surname>Matsuo</surname>
+        </name>
+        <contact>
+            <phone>+1 801 671 2514</phone>
+            <email>bryan.matsuo@gmail.com</email>
+            <url>https://github.com/bmatuso</url>
+            <url>https://linkedin.com/in/bryanmatsuo</url>
+            <url>http://bmats.co</url>
+        </contact>
+    </header>
+    <objective>
+        <para>
+            I want to solve hard problems, build and scale backend systems,
+            and learn new skills with a talented group of motivated people.
+        </para>
+    </objective>
+    <skillarea>
+        <title>Programming Languages</title>
+        <skillset>
+            <skill>Go</skill>
+            <skill>Python</skill>
+            <skill>Ruby</skill>
+            <skill>Shell (Bash, Perl, Awk, Sed, ...)</skill>
+            <skill>Lisp/Scheme</skill>
+            <skill>Ocaml</skill>
+            <skill>Haskell</skill>
+            <skill>Scala</skill>
+            <skill>C/C++</skill>
+            <skill>Matlab</skill>
+        </skillset>
+    </skillarea>
+    <skillarea>
+        <title>Web development</title>
+        <skillset>
+            <skill>Rails</skill>
+            <skill>AngularJS</skill>
+            <skill>JQuery</skill>
+        </skillset>
+    </skillarea>
+    <skillarea>
+        <title>Software</title>
+        <skillset>
+            <skill>Puppet</skill>
+            <skill>Nginx</skill>
+            <skill>Redis</skill>
+            <skill>Postgres</skill>
+            <skill>Zookeeper</skill>
+        </skillset>
+    </skillarea>
+    <skillarea>
+        <title>Protocols</title>
+        <skillset>
+            <skill>HTTP</skill>
+            <skill>Open ID</skill>
+            <skill>OAuth 2.0</skill>
+        </skillset>
+    </skillarea>
+    <interests>
+        <interest>
+            <title>Web architecture</title>
+        </interest>
+        <interest>
+            <title>Distributed systems</title>
+        </interest>
+        <interest>
+            <title>Dev Ops</title>
+        </interest>
+        <interest>
+            <title>Client-side MV*</title>
+        </interest>
+        <interest>
+            <title>programming languages/paradigms</title>
+            <description>
+                <para>
+                    Exploring different problem solving mindsets and finding the best
+                    tools for different problems.
+                </para>
+            </description>
+        </interest>
+        <interest>
+            <title>Automation workflows</title>
+            <description>
+                <para>
+                    I write tools and automation workflows for home-entertainment
+                    system PCs, improving their integration with satellite devices
+                    (laptops, iDevices, etc.).
+                </para>
+            </description>
+        </interest>
+        <interest>
+            <title>Soccer</title>
+        </interest>
+        <interest>
+            <title>Music</title>
+        </interest>
+        <interest>
+            <title>Backpacking</title>
+        </interest>
+    </interests>
+    <history>
+        <job>
+            <jobtitle>Software Engineer</jobtitle>
+            <employer>Janrain, Int</employer>
+            <period>
+                <from>
+                    <date>
+                        <month>Feb</month>
+                        <year>2012</year>
+                    </date>
+                </from>
+                <to>
+                    <present/>
+                </to>
+            </period>
+            <description>
+                <para>
+                    After initially writing integration libraries for OAuth social
+                    identity providers, I took over development on the primary
+                    backend component in large-scale redesign for the core user
+                    management product written in Ruby on Rails. I participated in
+                    design discussions with product management, developed the
+                    initial test framework still used for product QA, and was
+                    responsible for most of the server-side coding involving
+                    integrating internal services and building a processor for a
+                    user management DSL. As more, larger customers were brought
+                    on to the product I worked with operations and software
+                    egineers from other teams to tune performance of our
+                    infrastructure to meet the necessary. As that project shifted
+                    from development to maintenence I've transitioned to a team
+                    writing Scala web services to tackle infrastructure management
+                    problems the faced by the company as it grows.
+                </para>
+            </description>
+        </job>
+        <job>
+            <jobtitle>Software Developer (Contract)</jobtitle>
+            <employer>LEEPS, Univ of California - Santa Cruz</employer>
+            <period>
+                <from>
+                    <date>
+                        <month>Apr</month>
+                        <year>2011</year>
+                    </date>
+                </from>
+                <to><present/></to>
+            </period>
+            <description>
+                <para>
+                    I developed an open source, network-multiplayer game framework
+                    for academic use in experimental economics in conjunction with
+                    lead developer James Pettit. The real-time framework was
+                    implemented in Python used Redis on the backend for consistent
+                    state management and a JSON protocal for client communication.
+                    There was also some GUI programming with GTK, Wx, and Matplotlib.
+                </para>
+            </description>
+        </job>
+    </history>
+    <academics>
+        <degrees>
+            <degree>
+                <level>BS</level><!-- XXX inaccurate -->
+                <annotation>
+                    Honors in Computer Science.
+                    Highest honors in Mathematics
+                </annotation>
+                <major>Computer Science</major>
+                <major>Mathematics</major>
+                <date>
+                    <month>Mar</month>
+                    <year>2009</year>
+                </date>
+                <institution>Univ of California - Santa Cruz</institution>
+            </degree>
+        </degrees>
+    </academics>
+</resume>

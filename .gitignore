@@ -5,3 +5,6 @@
 *.ps
 *.pdf
 .*.sw[op]
+*.fo
+*.synctex.gz
+.idea/
