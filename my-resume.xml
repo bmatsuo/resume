@@ -18,18 +18,13 @@
         </para>
     </objective>
     <skills category="Programming languages">
-        <skill>Bash</skill>
-        <skill>Ruby on Rails</skill>
-        <skill>Perl</skill>
-        <skill>Python</skill>
-        <skill>Matlab</skill>
         <skill>Go</skill>
-        <skill>Scala</skill>
-        <skill>Functional Programming</skill>
-        <skill>OAuth 2.0</skill>
         <skill>C/C++</skill>
-        <skill>Lisp/Scheme</skill>
-        <skill>Ocaml</skill>
+        <skill>Ruby on Rails</skill>
+        <skill>Python</skill>
+        <skill>Perl</skill>
+        <skill>Bash</skill>
+        <skill>Scala</skill>
         <skill>Haskell</skill>
         <skill>Scala</skill>
     </skills>
@@ -41,11 +36,18 @@
         <skill>Postgres</skill>
         <skill>Git</skill>
     </skills>
+    <skills category="Technologies">
+        <skill>HTTP</skill>
+        <skill>OAuth 2.0</skill>
+        <skill>XSD</skill>
+        <skill>XSLT</skill>
+    </skills>
     <interests category="Techincal">
         <interest>Web architecture</interest>
         <interest>Distributed systems</interest>
         <interest>Dev Ops</interest>
         <interest>Client-side MV*</interest>
+        <interest>Functional Programming</interest>
     </interests>
     <interests category="Personal">
         <interest>
