@@ -1,9 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="resume-html.xsl"?>
 <resume xmlns="urn:resume"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="urn:resume resume.xsd">
     <header>
         <name>Bryan Matsuo</name>
-        <link href="https://github.com/bmatuso">GitHub</link>
+        <link href="https://github.com/bmatsuo">GitHub</link>
         <link href="https://linkedin.com/in/bryanmatsuo">LinkedIn</link>
         <link href="http://bmats.co">Personal</link>
         <contact>
@@ -35,6 +37,7 @@
         <skill>Zookeeper</skill>
         <skill>Postgres</skill>
         <skill>Git</skill>
+        <skill>Syslog</skill>
     </skills>
     <skills category="Technologies">
         <skill>HTTP</skill>
@@ -109,11 +112,11 @@
             <dates from="Sep 2004" to="Mar 2009"/>
             <concentration type="major">
                 <subject>Computer Science</subject>
-                <degree>BS</degree>
+                <degree>B.S.</degree>
             </concentration>
             <concentration type="major">
                 <subject>Mathematics</subject>
-                <degree>BA</degree>
+                <degree>B.A.</degree>
             </concentration>
             <achievement>
                 <title>Honors in Computer Science</title>
