@@ -47,7 +47,19 @@
     </xs:complexType>
 
     <xs:complexType name="Address">
-        <!-- TODO figure this shit out TODO -->
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                Modeled after the Portable Contacts specification
+                http://portablecontacts.net/draft-spec.html#address_element
+            </xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="streetAddress" type="xs:token" maxOccurs="unbounded"/>
+            <xs:element name="locality" type="xs:token"/>
+            <xs:element name="region" type="xs:token"/>
+            <xs:element name="postalCode" type="xs:token"/>
+            <xs:element name="country" type="xs:token"/>
+        </xs:sequence>
     </xs:complexType>
 
     <xs:complexType name="Skills">
