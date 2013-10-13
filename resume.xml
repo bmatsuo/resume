@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="/xml-resume/xsl/html.xsl"?>
+<?xml-stylesheet type="text/xsl" href="http://bmats.co/xml-resume/0/xsl/html.xsl"?>
 <resume xmlns="http://bmats.co/xml-resume/0"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://bmats.co/xml-resume/0 http://bmats.co/xml-resume/0/schema/resume.xsd">
