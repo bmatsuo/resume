@@ -5,12 +5,12 @@
         xsi:schemaLocation="urn:resume resume.xsd">
     <header>
         <name>Bryan Matsuo</name>
-        <link href="https://github.com/bmatsuo">GitHub</link>
-        <link href="https://linkedin.com/in/bryanmatsuo">LinkedIn</link>
-        <link href="http://bmats.co">Personal</link>
         <contact>
             <email>bryan.matsuo@gmail.com</email>
             <phone>+1 801 671 2514</phone>
+            <link href="https://github.com/bmatsuo">GitHub</link>
+            <link href="https://linkedin.com/in/bryanmatsuo">LinkedIn</link>
+            <link href="http://bmats.co">Personal</link>
         </contact>
     </header>
     <objective>
