@@ -1,0 +1,35 @@
+.row {
+    margin-bottom: 15px;
+}
+
+.section .header {
+    border-bottom: 0px;
+    margin-bottom: 5px;
+}
+
+.section .header h3 {
+    border-bottom: 0px;
+    padding-bottom: 5px;
+}
+
+.section .item p {
+    margin-top: 5px;
+}
+
+.section .item .header {
+    margin-bottom: 5px;
+}
+
+.section .item .header h3 {
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+.section .row {
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+.section .row.list.category {
+    margin-bottom: 10px;
+}

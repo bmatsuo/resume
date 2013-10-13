@@ -21,6 +21,7 @@
                 <link rel="stylesheet" media="screen" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
                 <!-- FIXME this asset ref is too dependent on path to resume (inline <style>?) -->
                 <link rel="stylesheet" href="assets/css/jumbotron-narrow.css"/>
+                <link rel="stylesheet" href="assets/css/resume.css"/>
             </head>
             <body>
                 <div class="container">
@@ -84,98 +85,128 @@
     </xsl:template>
 
     <xsl:template match="r:objective">
-        <div class="row marketing">
-            <h3>Objective</h3>
-        </div>
-        <div class="row marketing">
-            <xsl:for-each select="r:para">
-                <p><xsl:value-of select="."/></p>
-            </xsl:for-each>
+        <div class="section">
+            <div class="row marketing header">
+                <h3 class="compact">Objective</h3>
+            </div>
+            <div class="row marketing">
+                <div class="row marketing"><!-- this redundancy kind of sucks -->
+                    <xsl:for-each select="r:para">
+                        <p><xsl:value-of select="."/></p>
+                    </xsl:for-each>
+                </div>
+            </div>
         </div>
     </xsl:template>
 
     <xsl:template name="skills">
-        <div class="row marketing">
-            <h3>Skills</h3>
-        </div>
-        <xsl:for-each select="r:skills">
-            <div class="row marketing list category">
-                <xsl:if test="count(@category) != 0">
-                    <strong><xsl:value-of select="@category"/></strong>
-                </xsl:if>
+        <div class="section">
+            <div class="row marketing header">
+                <h3>Skills</h3>
             </div>
-            <div class="row marketing list">
-                <xsl:for-each select="r:skill">
-                    <xsl:value-of select="."/>
-                    <xsl:if test="position() != last()">
-                        <xsl:text>, </xsl:text>
-                    </xsl:if>
+            <div class="row marketing">
+                <xsl:for-each select="r:skills">
+                    <div class="row marketing list category">
+                        <xsl:if test="count(@category) != 0">
+                            <strong><xsl:value-of select="@category"/></strong>
+                        </xsl:if>
+                    </div>
+                    <div class="row marketing list">
+                        <xsl:for-each select="r:skill">
+                            <xsl:value-of select="."/>
+                            <xsl:if test="position() != last()">
+                                <xsl:text>, </xsl:text>
+                            </xsl:if>
+                        </xsl:for-each>
+                    </div>
                 </xsl:for-each>
             </div>
-        </xsl:for-each>
+        </div>
     </xsl:template>
 
     <xsl:template name="interests">
-        <div class="row marketing">
-            <h3>Interests</h3>
-        </div>
-        <xsl:for-each select="r:interests">
-            <div class="row marketing list category">
-                <xsl:if test="count(@category) != 0">
-                    <strong><xsl:value-of select="@category"/></strong>
-                </xsl:if>
+        <div class="section">
+            <div class="row marketing section header">
+                <h3>Interests</h3>
             </div>
-            <div class="row marketing list">
-                <xsl:for-each select="r:interest">
-                    <span><xsl:value-of select="."/></span>
-                    <xsl:if test="position() != last()">
-                        <xsl:text>, </xsl:text>
-                    </xsl:if>
+            <div class="row marketing">
+                <xsl:for-each select="r:interests">
+                    <div class="row marketing list category">
+                        <xsl:if test="count(@category) != 0">
+                            <strong><xsl:value-of select="@category"/></strong>
+                        </xsl:if>
+                    </div>
+                    <div class="row marketing list">
+                        <xsl:for-each select="r:interest">
+                            <span><xsl:value-of select="."/></span>
+                            <xsl:if test="position() != last()">
+                                <xsl:text>, </xsl:text>
+                            </xsl:if>
+                        </xsl:for-each>
+                    </div>
                 </xsl:for-each>
             </div>
-        </xsl:for-each>
+        </div>
     </xsl:template>
 
     <!-- TODO parameterized CSV list generator for skills/interests -->
 
     <xsl:template match="r:history">
-        <div class="row marketing">
-            <h3>Employment</h3>
+        <div class="section">
+            <div class="row marketing section header">
+                <h3>Employment</h3>
+            </div>
+            <xsl:for-each select="r:employment">
+                <div class="row marketing item">
+                    <div class="row header">
+                        <div class="col-sm-8 col-md-8 col-lg-8">
+                            <strong><xsl:value-of select="r:employer"/></strong>
+                        </div>
+                        <div class="col-sm-4 col-md-4 col-lg-4 offset-md-1 offset-md-1">
+                            <xsl:apply-templates select="r:dates"/>
+                        </div>
+                    </div>
+                    <div class="row marketing">
+                        <xsl:for-each select="r:description/r:para">
+                            <p><xsl:value-of select="."/></p>
+                        </xsl:for-each>
+                    </div>
+                </div>
+            </xsl:for-each>
         </div>
-        <xsl:for-each select="r:employment">
-            <div class="row marketing">
-                <span><strong><xsl:value-of select="r:employer"/></strong></span>
-                <span class="pull-right"><xsl:apply-templates select="r:dates"/></span>
-            </div>
-            <div class="row marketing">
-                <xsl:for-each select="r:description/r:para">
-                    <p><xsl:value-of select="."/></p>
-                </xsl:for-each>
-            </div>
-        </xsl:for-each>
 
-        <div class="row marketing">
-            <h3>Academic</h3>
-        </div>
-        <xsl:for-each select="r:academic">
-            <div class="row marketing">
-                <span><strong><xsl:value-of select="r:institution"/></strong></span>
-                <span class="pull-right"><xsl:apply-templates select="r:dates"/></span>
-                <ul class="list-unstyled">
-                    <xsl:for-each select="r:concentration">
-                        <li>
-                            <xsl:value-of select="r:degree"/>
-                            <xsl:text> </xsl:text>
-                            <xsl:value-of select="r:subject"/>
-                            <xsl:if test="count(r:degree) = 0">
-                                <xsl:text> </xsl:text>
-                                (<xsl:value-of select="@type"/>)
-                            </xsl:if>
-                        </li>
-                    </xsl:for-each>
-                </ul>
+        <div class="section">
+            <div class="row marketing section header">
+                <h3>Academic</h3>
             </div>
-        </xsl:for-each>
+            <xsl:for-each select="r:academic">
+                <div class="row marketing item">
+                    <div class="row header">
+                        <div class="col-sm-8 col-md-8 col-lg-8">
+                            <strong><xsl:value-of select="r:institution"/></strong>
+                        </div>
+                        <div class="col-sm-4 col-md-4 col-lg-4">
+                            <xsl:apply-templates select="r:dates"/>
+                        </div>
+                    </div>
+                    <div class="row marketing">
+                        <ul class="list-unstyled">
+                            <xsl:for-each select="r:concentration">
+                                <li>
+                                    <xsl:value-of select="r:degree"/>
+                                    <xsl:text> </xsl:text>
+                                    <xsl:value-of select="r:subject"/>
+                                    <xsl:if test="count(r:degree) = 0">
+                                        <xsl:text> </xsl:text>
+                                        (<xsl:value-of select="@type"/>)
+                                    </xsl:if>
+                                </li>
+                            </xsl:for-each>
+                        </ul>
+                    </div>
+                </div>
+            </xsl:for-each>
+        </div>
     </xsl:template>
 
     <xsl:template match="r:dates">
