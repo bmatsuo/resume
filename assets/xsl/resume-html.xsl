@@ -7,7 +7,13 @@
 
     <!-- An html5 shell for all instance document content -->
     <xsl:template match="/">
-        <xsl:text disable-output-escaping='yes'>&lt;!DOCTYPE html></xsl:text>
+        <!-- Output DOCTYPE when possible -->
+        <xsl:choose>
+            <xsl:when test="system-property('xsl:vendor')='Transformiix'"/>
+            <xsl:otherwise>
+                <xsl:text disable-output-escaping='yes'>&lt;!DOCTYPE html></xsl:text>
+            </xsl:otherwise>
+        </xsl:choose>
         <html>
             <head>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -35,23 +41,30 @@
     </xsl:template>
 
     <xsl:template match="r:header">
-        <div class="header">
-            <ul class="nav nav-pills pull-right">
-                <xsl:for-each select="r:link">
-                    <li class="row">
-                        <a href="{@href}"><xsl:value-of select="."/></a>
-                    </li>
-                </xsl:for-each>
-            </ul>
-            <h2><xsl:value-of select="r:name"/></h2>
-            <div class="row marketing">
-                <div class="pull-right">
-                    <xsl:value-of select="r:contact/r:email"/><br/>
-                    <xsl:value-of select="r:contact/r:phone"/>
-                </div>
-                <xsl:apply-templates select="r:contact/r:address"/>
-            </div>
+        <div class="row header">
+            <span class="col-sm-7 col-md-7 col-lg-7">
+                <h2><xsl:value-of select="r:name"/></h2>
+            </span>
+            <span class="hidden-lg col-sm-5 col-md-5 col-lg-5 offset-md-1 offset-lg-1">
+                <xsl:apply-templates select="r:contact"/>
+            </span>
+            <span class="visible-lg pull-right col-sm-5 col-md-5 col-lg-5 offset-md-1 offset-lg-1">
+                <xsl:apply-templates select="r:contact"/>
+            </span>
         </div>
+    </xsl:template>
+
+    <xsl:template match="r:contact">
+        <ul class="list-unstyled">
+            <li><xsl:value-of select="r:email"/></li>
+            <li><xsl:value-of select="r:phone"/></li>
+            <xsl:for-each select="r:address">
+                <li><xsl:apply-templates select="."/></li>
+            </xsl:for-each>
+            <xsl:for-each select="r:link">
+                <li><xsl:apply-templates select="."/></li>
+            </xsl:for-each>
+        </ul>
     </xsl:template>
 
     <xsl:template match="r:address">
@@ -67,6 +80,10 @@
             <xsl:text> </xsl:text>
             <xsl:value-of select="r:country"/>
         </div>
+    </xsl:template>
+
+    <xsl:template match="r:link">
+        <a href="{@href}" title="{.}"><xsl:value-of select="@href"/></a>
     </xsl:template>
 
     <xsl:template match="r:objective">
@@ -147,7 +164,7 @@
             <div class="row marketing">
                 <span><strong><xsl:value-of select="r:institution"/></strong></span>
                 <span class="pull-right"><xsl:apply-templates select="r:dates"/></span>
-                <ul>
+                <ul class="list-unstyled">
                     <xsl:for-each select="r:concentration">
                         <li>
                             <xsl:value-of select="r:degree"/>

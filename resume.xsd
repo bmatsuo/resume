@@ -18,7 +18,6 @@
     <xs:complexType name="Header">
         <xs:sequence>
             <xs:element name="name" type="Name"/>
-            <xs:element name="link" type="Link" maxOccurs="unbounded"/>
             <xs:element name="contact" type="Contact"/>
         </xs:sequence>
     </xs:complexType>
@@ -43,6 +42,7 @@
             <xs:element name="email" type="Email"/>
             <xs:element name="phone" type="Phone" minOccurs="0"/>
             <xs:element name="address" type="Address" minOccurs="0"/>
+            <xs:element name="link" type="Link" minOccurs="0" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
 
