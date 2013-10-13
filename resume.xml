@@ -15,28 +15,33 @@
     </header>
     <objective>
         <para>
-            I want to solve hard problems, build and scale backend systems,
-            and learn new skills with a talented group of motivated people.
+            I want to solve interesting problems, build and scale backend systems,
+            and learn in a fresh environment with a group of talented and motivated
+            people.
         </para>
     </objective>
     <skills category="Programming languages">
         <skill>Go</skill>
         <skill>C/C++</skill>
-        <skill>Ruby on Rails</skill>
+        <skill>Ruby on (and off) Rails</skill>
         <skill>Python</skill>
         <skill>Perl</skill>
         <skill>Bash</skill>
         <skill>Scala</skill>
         <skill>Haskell</skill>
+        <skill>Shell</skill>
     </skills>
     <skills category="Software">
         <skill>Puppet</skill>
-        <skill>MongoDB</skill>
+        <skill>Nginx</skill>
+        <skill>Syslog</skill>
         <skill>Redis</skill>
         <skill>Zookeeper</skill>
         <skill>Postgres</skill>
+        <skill>MongoDB</skill>
         <skill>Git</skill>
-        <skill>Syslog</skill>
+        <skill>LaTeX</skill>
+        <skill>Matplotlib/Gnuplot</skill>
     </skills>
     <skills category="Technologies">
         <skill>HTTP</skill>
@@ -45,25 +50,17 @@
         <skill>XSLT</skill>
     </skills>
     <interests category="Techincal">
-        <interest>Web architecture</interest>
-        <interest>Distributed systems</interest>
+        <interest>Web service architecture</interest>
+        <interest>Distributed file systems</interest>
         <interest>Dev Ops</interest>
         <interest>Client-side MV*</interest>
-        <interest>Functional Programming</interest>
+        <interest>Functional programming</interest>
+        <interest>Open source</interest>
     </interests>
     <interests category="Personal">
-        <interest>
-            Learning programming languages, exploring different problem solving
-            mindsets and paradigms, and finding the best tools for different
-            problems.
-        </interest>
-        <interest>
-            Developing tools and automation workflows for home-entertainment
-            system PCs, improving their integration with satellite devices
-            (laptops, iDevices, etc.).
-        </interest>
         <interest>Soccer</interest>
         <interest>Music</interest>
+        <interest>Beer</interest>
         <interest>Backpacking</interest>
     </interests>
     <history>
@@ -73,21 +70,11 @@
             <dates from="Feb 2012" to="present"/>
             <description>
                 <para>
-                    After initially writing integration libraries for OAuth social
-                    identity providers, I took over development on the primary
-                    backend component in large-scale redesign for the core user
-                    management product written in Ruby on Rails. I participated in
-                    design discussions with product management, developed the
-                    initial test framework still used for product QA, and was
-                    responsible for most of the server-side coding involving
-                    integrating internal services and building a processor for a
-                    user management DSL. As more, larger customers were brought
-                    on to the product I worked with operations and software
-                    egineers from other teams to tune performance of our
-                    infrastructure to meet the necessary. As that project shifted
-                    from development to maintenence I've transitioned to a team
-                    writing Scala web services to tackle infrastructure management
-                    problems the faced by the company as it grows.
+                    Developed integration libraries for OAuth social identity
+                    providers. Co-authored a user/session management javascript widget
+                    product. Participated in design discussions for the widget. Responsible
+                    for meeting deadlines with rapid customer rollout strategy. Responsible
+                    for training initial user base and facilitating adoption of a new product.
                 </para>
             </description>
         </employment>
@@ -97,12 +84,22 @@
             <dates from="Apr 2011" to="Jul 2011"/>
             <description>
                 <para>
-                    I developed an open source, network-multiplayer game framework
-                    for academic use in experimental economics in conjunction with
-                    lead developer James Pettit. The real-time framework was
-                    implemented in Python used Redis on the backend for consistent
-                    state management and a JSON protocal for client communication.
-                    There was also some GUI programming with GTK, Wx, and Matplotlib.
+                    Developed an open source, network-multiplayer game framework
+                    for academic use in experimental economics in under lead developer
+                    James Pettit. Assisted in development of server program. Developed
+                    agent libraries and a fully functional example experiment with Wx and
+                    Matplotlib.
+                </para>
+            </description>
+        </employment>
+        <employment>
+            <position>Research Assistant</position>
+            <employer>David Haussler &amp; Dimitris Achlioptas, Univ of California - Santa Cruz</employer>
+            <dates from="Jul 2009" to="Sept 2010"/>
+            <description>
+                <para>
+                    Developed and analyzed high-level evolutionary models. Scipted analysis of
+                    C++ simulations run on a Linux cluster PBS.
                 </para>
             </description>
         </employment>
