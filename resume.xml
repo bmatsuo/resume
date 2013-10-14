@@ -31,9 +31,11 @@
         <skill>Shell</skill>
     </skills>
     <skills category="Software">
+        <skill>Linux</skill>
         <skill>Puppet</skill>
         <skill>Nginx</skill>
         <skill>Syslog</skill>
+        <skill>iptables</skill>
         <skill>Redis</skill>
         <skill>Zookeeper</skill>
         <skill>Postgres</skill>
