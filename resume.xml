@@ -50,19 +50,13 @@
         <skill>XSD</skill>
         <skill>XSLT</skill>
     </skills>
-    <interests category="Techincal">
+    <interests>
         <interest>Web service architecture</interest>
         <interest>Distributed file systems</interest>
-        <interest>Dev Ops</interest>
+        <interest>Home automation</interest>
         <interest>Client-side MV*</interest>
         <interest>Functional programming</interest>
         <interest>Open source</interest>
-    </interests>
-    <interests category="Personal">
-        <interest>Soccer</interest>
-        <interest>Music</interest>
-        <interest>Beer</interest>
-        <interest>Backpacking</interest>
     </interests>
     <history>
         <employment>
