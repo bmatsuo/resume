@@ -86,7 +86,7 @@
             <description>
                 <para>
                     Developed an open source, network-multiplayer game framework
-                    for academic use in experimental economics in under lead developer
+                    for academic use in experimental economics under lead developer
                     James Pettit. Assisted in development of server program. Developed
                     agent libraries and a fully functional example experiment with Wx and
                     Matplotlib.
