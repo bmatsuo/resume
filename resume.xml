@@ -14,8 +14,8 @@
     </header>
     <objective>
         <para>
-            I want to solve interesting problems, build and scale backend systems,
-            and learn in a fresh environment with a group of talented and motivated
+            I want to solve interesting problems, build products, scale systems,
+            and learn in a friendly environment with a group of talented and motivated
             people.
         </para>
     </objective>
@@ -41,22 +41,18 @@
         <skill>Postgres</skill>
         <skill>MongoDB</skill>
         <skill>Git</skill>
-        <skill>LaTeX</skill>
         <skill>Matplotlib/Gnuplot</skill>
     </skills>
-    <skills category="Technologies">
-        <skill>HTTP</skill>
-        <skill>OAuth 2.0</skill>
-        <skill>XSD</skill>
-        <skill>XSLT</skill>
-    </skills>
     <interests>
-        <interest>Web service architecture</interest>
+        <interest>Web service architecture and performance</interest>
+        <interest>System programming</interest>
+        <interest>Linux containers</interest>
         <interest>Distributed file systems</interest>
         <interest>Home automation</interest>
         <interest>Client-side MV*</interest>
         <interest>Functional programming</interest>
         <interest>Open source</interest>
+        <interest>Soccer</interest>
     </interests>
     <history>
         <employment>
@@ -65,11 +61,12 @@
             <dates from="Feb 2012" to="present"/>
             <description>
                 <para>
-                    Developed integration libraries for OAuth social identity
-                    providers. Co-authored a user/session management javascript widget
-                    product. Participated in design discussions for the widget. Responsible
-                    for meeting deadlines with rapid customer rollout strategy. Responsible
-                    for training initial user base and facilitating adoption of a new product.
+                    Developed integration libraries for OpenID and OAuth social identity
+                    providers. Primary developer responsible for the server component of
+                    a user/session management javascript offering. Participated in product
+                    design discussions. Responsible for meeting deadlines with rapid customer
+                    rollout strategy. Responsible for training the initial user base and
+                    facilitating adoption of a new product.
                 </para>
             </description>
         </employment>
@@ -79,11 +76,12 @@
             <dates from="Apr 2011" to="Jul 2011"/>
             <description>
                 <para>
-                    Developed an open source, network-multiplayer game framework
-                    for academic use in experimental economics under lead developer
-                    James Pettit. Assisted in development of server program. Developed
-                    agent libraries and a fully functional example experiment with Wx and
-                    Matplotlib.
+                    Developed an open source, extensible framework for writing
+                    network-multiplayer economics experiments/games. Assisted in development
+                    of a monitor program using Redis pub-sub and an atomic log to maintain
+                    state and control experiments. Developed event-based agent libraries and
+                    subject UIs for a proof of concept experiment run with a small group of
+                    real subjects.
                 </para>
             </description>
         </employment>
@@ -100,7 +98,7 @@
         </employment>
         <academic>
             <institution>Univ of Califonia - Santa Cruz</institution>
-            <dates from="Sep 2004" to="Mar 2009"/>
+            <dates from="Sept 2004" to="Mar 2009"/>
             <concentration type="major">
                 <subject>Computer Science</subject>
                 <degree>B.S.</degree>
