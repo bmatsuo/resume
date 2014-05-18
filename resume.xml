@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="http://bmatsuo.github.io/xml-resume/0.3/xsl/html.xsl"?>
+<?xml-stylesheet type="text/xsl" href="http://bmatsuo.github.io/Resume/xml-resume/xsl/html.xsl"?>
 <resume xmlns="http://bmatsuo.github.io/xml-resume/0.3"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://bmatsuo.github.io/xml-resume/0.3 http://bmatsuo.github.io/xml-resume/0.3/schema/resume.xsd">
