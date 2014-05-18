@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="http://bmatsuo.github.io/xml-resume/0.3/xsl/html.xsl"?>
+<resume xmlns="http://bmatsuo.github.io/xml-resume/0.3"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://bmatsuo.github.io/xml-resume/0.3 http://bmatsuo.github.io/xml-resume/0.3/schema/resume.xsd">
+    <header>
+        <name>Lorem Ipsum Jr</name>
+        <contact>
+            <email>dolor@sit.amet</email>
+            <phone>+1 555 555 5555</phone>
+            <address>
+                <street>123 consectetur adipiscing elit</street>
+                <street>APT 4</street>
+                <locality>Phasellus</locality>
+                <region>TR</region>
+                <postcode>73452</postcode>
+                <country>Istique</country>
+            </address>
+            <link href="https://example.com/convallis">Ante</link>
+            <link href="https://example.com/in/sed">Ultricies</link>
+        </contact>
+    </header>
+    <objective>
+        <para>
+            Molestie id. Fusce est sem, accumsan sed consectetur ut, rhoncus ac
+            eros. Etiam in adipiscing massa. Nunc vehicula mi ut risus pretium,
+            at pretium nisi sodales.
+        </para>
+        <para>
+            Duis sed magna vel orci tincidunt venenatis. Etiam nec condimentum
+            arcu, at auctor nunc. Pellentesque a velit ipsum. Etiam ornare
+            aliquam est ut placerat.
+        </para>
+    </objective>
+    <skills category="Aenean">
+        <skill>Pellentesque</skill>
+        <skill>porttitor</skill>
+        <skill>Turpis</skill>
+        <skill>Ut</skill>
+        <skill>Pretium</skill>
+    </skills>
+    <skills category="Nam Vel">
+        <skill>Neque</skill>
+        <skill>Aliquam</skill>
+        <skill>Semper Orci</skill>
+        <skill>Ac</skill>
+        <skill>Ultrices</skill>
+        <skill>Erat</skill>
+        <skill>Aliquam Rhoncus</skill>
+        <skill>Vestibulum</skill>
+        <skill>Viverra</skill>
+    </skills>
+    <interests>
+        <interest>Morbi</interest>
+        <interest>Vitae dapibus nulla</interest>
+        <interest>Vestibulum</interest>
+        <interest>Odio quam</interest>
+    </interests>
+    <history>
+        <employment>
+            <position>Senior Tempor Non</position>
+            <employer>Posuere Vehicula</employer>
+            <dates from="Oct 2004" to="Dec 2012"/>
+            <description>
+                <para>
+                    Molestie in ante. Aenean faucibus iaculis libero, ac tempor ipsum
+                    volutpat non. Fusce lacinia, diam sed ornare volutpat, massa nunc
+                    imperdiet lectus, nec rhoncus turpis turpis non enim. Etiam
+                    imperdiet, nibh blandit fermentum imperdiet, tortor tortor
+                    tristique justo, et ullamcorper odio quam eget neque.  Integer
+                    consectetur urna quis est rutrum varius.
+                </para>
+            </description>
+        </employment>
+        <employment>
+            <position>Cras Felis Orci</position>
+            <employer>Posuere Vel Justo</employer>
+            <dates from="Sept 2000" to="Aug 2004"/>
+            <description>
+                <para>
+                    A, accumsan ultrices dolor. Suspendisse hendrerit ipsum vel lectus
+                    ultricies, quis blandit neque blandit. Vestibulum ante ipsum
+                    primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+                </para>
+                <para>
+                    Fusce purus dui, dapibus non libero mollis, cursus rutrum lectus.
+                    Fusce volutpat at odio at interdum. Donec in ante sapien.
+                </para>
+            </description>
+        </employment>
+        <academic>
+            <institution>Nam quis urna ut sapien</institution>
+            <dates from="Aug 1994" to="May 1999"/>
+            <concentration type="major">
+                <subject>Aretium Laoreet</subject>
+                <degree>I.S.</degree>
+            </concentration>
+            <concentration type="minor">
+                <subject>Amet Fermentum</subject>
+                <degree/>
+            </concentration>
+            <achievement>
+                <title>Etiam nulla sapien</title>
+            </achievement>
+        </academic>
+    </history>
+</resume>
