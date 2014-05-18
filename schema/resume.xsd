@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns="http://bmatsuo.github.io/xml-resume/0.3"
+           targetNamespace="http://bmatsuo.github.io/xml-resume/0.3"
+           version="0.3 (20140518)"
+           elementFormDefault="qualified">
+    <xs:element name="resume" type="Resume"/>
+    
+    <xs:complexType name="Resume">
+        <xs:sequence>
+            <xs:element name="header" type="Header"/>
+            <xs:element name="objective" type="TextBody"/>
+            <xs:element name="skills" type="Skills" maxOccurs="unbounded"/>
+            <xs:element name="interests" type="Interests" maxOccurs="unbounded"/>
+            <xs:element name="history" type="History"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="Header">
+        <xs:sequence>
+            <xs:element name="name" type="Name"/>
+            <xs:element name="contact" type="Contact"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="Name">
+        <!-- should this be mixed content w/ tagged pieces? -->
+        <xs:restriction base="xs:string">
+            <xs:whiteSpace value="collapse"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="Link">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="href" type="HttpUri"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:complexType name="Contact">
+        <xs:sequence>
+            <xs:element name="email" type="Email"/>
+            <xs:element name="phone" type="Phone" minOccurs="0"/>
+            <xs:element name="address" type="Address" minOccurs="0"/>
+            <xs:element name="link" type="Link" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="Address">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                Somewhat modeled after the Portable Contacts specification
+                http://portablecontacts.net/draft-spec.html#address_element
+            </xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="street" type="xs:token" maxOccurs="unbounded"/>
+            <xs:element name="locality" type="xs:token"/>
+            <xs:element name="region" type="xs:token"/>
+            <xs:element name="postcode" type="xs:token"/>
+            <xs:element name="country" type="xs:token" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="Skills">
+        <xs:sequence>
+            <xs:element name="skill" type="Collapsed" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="category" type="xs:token"/>
+    </xs:complexType>
+
+    <xs:complexType name="Interests">
+        <xs:sequence>
+            <xs:element name="interest" type="Collapsed" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="category" type="xs:token"/>
+    </xs:complexType>
+
+    <xs:complexType name="History">
+        <xs:sequence>
+            <xs:choice maxOccurs="unbounded">
+                <xs:element name="employment" type="Employment"/>
+                <xs:element name="academic" type="Academic"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="Employment">
+        <xs:sequence>
+            <xs:element name="position" type="xs:token"/>
+            <xs:element name="employer" type="xs:token"/>
+            <xs:element name="dates" type="DateRange"/>
+            <xs:element name="description" type="TextBody"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="DateRange">
+        <!-- TODO tighten this down? -->
+        <xs:attribute name="from" type="xs:token"/>
+        <xs:attribute name="to" type="xs:token"/>
+    </xs:complexType>
+
+    <xs:complexType name="Academic">
+        <xs:sequence>
+            <xs:element name="institution" type="xs:token"/>
+            <xs:element name="dates" type="DateRange"/>
+            <xs:element name="concentration" type="AcademicConcentration" maxOccurs="unbounded"/>
+            <xs:element name="achievement" type="AcademicAchievement" maxOccurs="unbounded"/>
+            <xs:element name="description" type="TextBody" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="AcademicConcentration">
+        <xs:sequence>
+            <xs:element name="subject" type="xs:token"/>
+            <xs:element name="degree" type="DegreeLevel"/>
+        </xs:sequence>
+        <xs:attribute name="type" type="MajorMinor"/>
+    </xs:complexType>
+
+    <xs:simpleType name="DegreeLevel">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                Generally BS, BA, but open to other values.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:token"/>
+    </xs:simpleType>
+
+    <xs:simpleType name="MajorMinor">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="major"/>
+            <xs:enumeration value="minor"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="AcademicAchievement">
+        <xs:sequence>
+            <xs:element name="title" type="xs:token"/>
+            <xs:element name="subject" type="xs:token" minOccurs="0"/>
+            <xs:element name="description" type="Collapsed" minOccurs="0"/>
+        </xs:sequence>
+        <xs:attribute name="type" type="AcademicAchievementType"/>
+    </xs:complexType>
+
+    <xs:simpleType name="AcademicAchievementType">
+        <xs:restriction base="xs:token">
+            <xs:enumeration value="degree"/>
+            <xs:enumeration value="award"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="TextBody">
+        <xs:sequence>
+            <xs:element name="para" type="Collapsed" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="Collapsed">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                Processors MUST ensure strings are collapsed or that excess whitespace is
+                otherwise ignored. Not all schema processors will augment instance
+                documents in this way.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:whiteSpace value="collapse"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="HttpUri">
+        <xs:restriction base="xs:anyURI">
+            <xs:pattern value="https?://.*"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="HttpsUri">
+        <xs:restriction base="HttpUri">
+            <xs:pattern value="https://.*"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="Email">
+        <!-- this needs to be relaxed to some degree -->
+        <!-- it is tweaked to accept my email address and '+' derivatives  -->
+        <xs:restriction base="xs:string">
+            <xs:pattern value="\w+([.]\w+)*([+]\w+)?[@]\w+[.]\w{2,}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="Phone">
+        <!-- hard to restrict -->
+        <xs:restriction base="xs:token"/>
+    </xs:simpleType>
+</xs:schema>
