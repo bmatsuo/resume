@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="http://bmats.co/xml-resume/0/xsl/html.xsl"?>
-<resume xmlns="http://bmats.co/xml-resume/0"
+<?xml-stylesheet type="text/xsl" href="http://bmatsuo.github.io/xml-resume/0.3/xsl/html.xsl"?>
+<resume xmlns="http://bmatsuo.github.io/xml-resume/0.3"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://bmats.co/xml-resume/0 http://bmats.co/xml-resume/0/schema/resume.xsd">
+        xsi:schemaLocation="http://bmatsuo.github.io/xml-resume/0.3 http://bmatsuo.github.io/xml-resume/0.3/schema/resume.xsd">
     <header>
         <name>Bryan Matsuo</name>
         <contact>
