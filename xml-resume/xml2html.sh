@@ -5,4 +5,4 @@ if [ -z "$XML_SRC" ]; then
     XML_SRC="example/resume.xml"
 fi
 
-xsltproc xsl/html.xsl "$XML_SRC" > resume.html
+xsltproc `dirname $0`/xsl/html.xsl "$XML_SRC" > resume.html
