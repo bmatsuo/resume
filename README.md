@@ -3,4 +3,4 @@
 ##Generating HTML
 
     ./xml-resume/xml2html.sh resume.xml
-    mv resume.xml index.html
+    mv resume.html index.html
