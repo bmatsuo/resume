@@ -22,35 +22,33 @@
     <skills category="Programming languages">
         <skill>Go</skill>
         <skill>C/C++</skill>
-        <skill>Ruby on (and off) Rails</skill>
+        <skill>Ruby</skill>
         <skill>Python</skill>
         <skill>Perl</skill>
-        <skill>Bash</skill>
         <skill>Scala</skill>
         <skill>Haskell</skill>
-        <skill>Shell</skill>
+        <skill>Shell (bash)</skill>
     </skills>
-    <skills category="Software">
+    <skills category="Software and technology">
         <skill>Linux</skill>
-        <skill>Puppet</skill>
+        <skill>AWS (S3/EC2)</skill>
+        <skill>Git</skill>
         <skill>Nginx</skill>
-        <skill>Syslog</skill>
-        <skill>iptables</skill>
+        <skill>Postgres</skill>
         <skill>Redis</skill>
         <skill>Zookeeper</skill>
-        <skill>Postgres</skill>
-        <skill>MongoDB</skill>
-        <skill>Git</skill>
-        <skill>Matplotlib/Gnuplot</skill>
+        <skill>Rails</skill>
+        <skill>Puppet/Chef/Ansible</skill>
+        <skill>Statsd/Graphite</skill>
     </skills>
     <interests>
         <interest>Web service architecture and performance</interest>
         <interest>System programming</interest>
         <interest>Linux containers</interest>
         <interest>Distributed file systems</interest>
+        <interest>In-memory databases</interest>
         <interest>Home automation</interest>
         <interest>Client-side MV*</interest>
-        <interest>Functional programming</interest>
         <interest>Open source</interest>
         <interest>Soccer</interest>
     </interests>
