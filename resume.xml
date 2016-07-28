@@ -14,58 +14,73 @@
     </header>
     <objective>
         <para>
-            I want to solve interesting problems, build products, scale systems,
-            and learn in a friendly environment with a group of talented and motivated
+            My goal is to solve interesting problems, scale systems, and learn
+            in a friendly environment with a group of talented and motivated
             people.
         </para>
     </objective>
     <skills category="Programming languages">
         <skill>Go</skill>
         <skill>C/C++</skill>
-        <skill>Ruby on (and off) Rails</skill>
+        <skill>Lua</skill>
+        <skill>Ruby</skill>
         <skill>Python</skill>
         <skill>Perl</skill>
-        <skill>Bash</skill>
         <skill>Scala</skill>
         <skill>Haskell</skill>
-        <skill>Shell</skill>
+        <skill>Shell (bash)</skill>
     </skills>
-    <skills category="Software">
+    <skills category="Software and technology">
         <skill>Linux</skill>
-        <skill>Puppet</skill>
+        <skill>AWS (S3/EC2)</skill>
+        <skill>Git</skill>
         <skill>Nginx</skill>
-        <skill>Syslog</skill>
-        <skill>iptables</skill>
+        <skill>Postgres</skill>
         <skill>Redis</skill>
         <skill>Zookeeper</skill>
-        <skill>Postgres</skill>
-        <skill>MongoDB</skill>
-        <skill>Git</skill>
-        <skill>Matplotlib/Gnuplot</skill>
+        <skill>Puppet/Chef/Ansible</skill>
+        <skill>Statsd/Graphite/Grafana</skill>
     </skills>
     <interests>
+        <interest>Pragmatism</interest>
         <interest>Web service architecture and performance</interest>
         <interest>System programming</interest>
-        <interest>Linux containers</interest>
         <interest>Distributed file systems</interest>
-        <interest>Home automation</interest>
-        <interest>Client-side MV*</interest>
-        <interest>Functional programming</interest>
+        <interest>In-memory databases</interest>
         <interest>Open source</interest>
-        <interest>Soccer</interest>
+        <interest>Home automation (IoT)</interest>
+        <interest>SAT solvers</interest>
     </interests>
     <history>
         <employment>
-            <position>Software Engineer</position>
+            <position>Senior Software Engineer</position>
             <employer>Janrain, Inc</employer>
-            <dates from="Feb 2012" to="present"/>
+            <dates from="Apr 2014" to="Nov 2015"/>
             <description>
                 <para>
-                    Developed integration libraries for OpenID and OAuth social identity
-                    providers. Primary developer responsible for the server component of
-                    a user/session management javascript offering. Participated in product
-                    design discussions. Responsible for meeting deadlines with rapid customer
-                    rollout strategy. Responsible for training the initial user base and
+                    Primary development of backend data processing systems
+                    using Go and Python, along with related maintenance on
+                    existing related systems.  Development of service packaging
+                    and deployment methodologies and the tooling to support
+                    them.  Dev-Ops tasks including determining system/service
+                    configurations, developing glue and tooling,
+                    integrating existing monitoring and alert systems, and
+                    responding to critical system events.
+                </para>
+            </description>
+        </employment>
+        <employment>
+            <position>Software Engineer</position>
+            <employer>Janrain, Inc</employer>
+            <dates from="Feb 2012" to="Apr 2014"/>
+            <description>
+                <para>
+                    Development of OpenID and OAuth integrations for social
+                    networks.  Primary development of backend components of a
+                    user/session management offering for websites.  Participant
+                    in product design discussions.  Responsible for meeting
+                    deadlines with rapid customer rollout strategy.
+                    Responsible for training the initial internal user base and
                     facilitating adoption of a new product.
                 </para>
             </description>
@@ -76,12 +91,10 @@
             <dates from="Apr 2011" to="Jul 2011"/>
             <description>
                 <para>
-                    Developed an open source, extensible framework for writing
-                    network-multiplayer economics experiments/games. Assisted in development
-                    of a monitor program using Redis pub-sub and an atomic log to maintain
-                    state and control experiments. Developed event-based agent libraries and
-                    subject UIs for a proof of concept experiment run with a small group of
-                    real subjects.
+                    Development of a Python framework for networked economics
+                    experiments (games).  Development of a control system using
+                    an atomic log maintaining state.  Development of clients
+                    and UIs for an experiment.
                 </para>
             </description>
         </employment>
@@ -91,8 +104,8 @@
             <dates from="Jul 2009" to="Sept 2010"/>
             <description>
                 <para>
-                    Developed and analyzed high-level evolutionary models. Scipted analysis of
-                    C++ simulations run on a Linux cluster PBS.
+                    Development and analysis of high-level evolutionary models
+                    implemented in C++.
                 </para>
             </description>
         </employment>
