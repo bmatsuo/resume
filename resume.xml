@@ -9,49 +9,45 @@
             <email>bryan.matsuo@gmail.com</email>
             <link href="https://github.com/bmatsuo">GitHub</link>
             <link href="https://linkedin.com/in/bryanmatsuo">LinkedIn</link>
-            <link href="http://bmats.co">Website</link>
         </contact>
     </header>
-    <objective>
-        <para>
-            My goal is to solve interesting problems, scale systems, and learn
-            in a friendly environment with a group of talented and motivated
-            people.
-        </para>
-    </objective>
     <skills category="Programming languages">
         <skill>Go</skill>
         <skill>C/C++</skill>
+        <skill>Lisp</skill>
         <skill>Lua</skill>
         <skill>Ruby</skill>
         <skill>Python</skill>
-        <skill>Perl</skill>
         <skill>Scala</skill>
         <skill>Haskell</skill>
         <skill>Shell (bash)</skill>
     </skills>
     <skills category="Software and technology">
         <skill>Linux</skill>
-        <skill>AWS (S3/EC2)</skill>
-        <skill>Git</skill>
-        <skill>Nginx</skill>
-        <skill>Postgres</skill>
-        <skill>Redis</skill>
-        <skill>Zookeeper</skill>
-        <skill>Puppet/Chef/Ansible</skill>
-        <skill>Statsd/Graphite/Grafana</skill>
+        <skill>AWS</skill>
+        <skill>Kubernetes/Helm</skill>
+        <skill>Terraform</skill>
+        <skill>Ansible</skill>
+        <skill>Prometheus/Statsd/Graphite/Grafana</skill>
     </skills>
-    <interests>
-        <interest>Pragmatism</interest>
-        <interest>Web service architecture and performance</interest>
-        <interest>System programming</interest>
-        <interest>Distributed file systems</interest>
-        <interest>In-memory databases</interest>
-        <interest>Open source</interest>
-        <interest>Home automation (IoT)</interest>
-        <interest>SAT solvers</interest>
-    </interests>
     <history>
+        <employment>
+            <position>Software Engineer</position>
+            <employer>Luther Systems, Ltd</employer>
+            <dates from="Nov 2017" to="Present"/>
+            <description>
+                <para>
+                    Development of enterprise blockchain application platform
+                    on Hyperledger Fabric.  Design and implementation of smart
+                    contract application framework and SDK in Go with embedded
+                    Lisp dialect developed in-house.  System infrastructure
+                    configuration and application management in AWS with
+                    Terraform and Ansible.  Transition of traditional
+                    infrastructure deployment on AWS EC2 to Kubernetes using
+                    Helm.
+                </para>
+            </description>
+        </employment>
         <employment>
             <position>Senior Software Engineer</position>
             <employer>Janrain, Inc</employer>
