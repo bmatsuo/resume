@@ -8,7 +8,6 @@
         <contact>
             <email>bryan.matsuo@gmail.com</email>
             <link href="https://github.com/bmatsuo">GitHub</link>
-            <link href="https://linkedin.com/in/bryanmatsuo">LinkedIn</link>
         </contact>
     </header>
     <skills category="Programming languages">
@@ -30,6 +29,11 @@
         <skill>Ansible</skill>
         <skill>Prometheus/Statsd/Graphite/Grafana</skill>
     </skills>
+    <interests>
+        <interest>Pragmatism</interest>
+        <interest>Systems programming</interest>
+        <interest>Infrastructure as code</interest>
+    </interests>
     <history>
         <employment>
             <position>Software Engineer</position>
@@ -58,10 +62,10 @@
                     using Go and Python, along with related maintenance on
                     existing related systems.  Development of service packaging
                     and deployment methodologies and the tooling to support
-                    them.  Dev-Ops tasks including determining system/service
-                    configurations, developing glue and tooling,
-                    integrating existing monitoring and alert systems, and
-                    responding to critical system events.
+                    them.  Dev-Ops tasks including system/service
+                    configuration, glue and tooling development, monitoring and
+                    alert system integrations, and responding to critical
+                    system events.
                 </para>
             </description>
         </employment>
@@ -73,11 +77,11 @@
                 <para>
                     Development of OpenID and OAuth integrations for social
                     networks.  Primary development of backend components of a
-                    user/session management offering for websites.  Participant
-                    in product design discussions.  Responsible for meeting
-                    deadlines with rapid customer rollout strategy.
-                    Responsible for training the initial internal user base and
-                    facilitating adoption of a new product.
+                    user/session management offering.  Participant in product
+                    design discussions.  Responsible for meeting deadlines with
+                    rapid customer rollout.  Responsible for training the
+                    internal user base and facilitating adoption of a new
+                    product.
                 </para>
             </description>
         </employment>
@@ -88,9 +92,8 @@
             <description>
                 <para>
                     Development of a Python framework for networked economics
-                    experiments (games).  Development of a control system using
-                    an atomic log maintaining state.  Development of clients
-                    and UIs for an experiment.
+                    experiments.  Development of state control system using an
+                    atomic log.  Development of clients and UIs.
                 </para>
             </description>
         </employment>
