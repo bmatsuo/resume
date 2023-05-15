@@ -38,17 +38,18 @@
         <employment>
             <position>Software Engineer</position>
             <employer>Luther Systems, Ltd</employer>
-            <dates from="Nov 2017" to="Present"/>
+            <dates from="Nov 2016" to="Present"/>
             <description>
                 <para>
                     Development of enterprise blockchain application platform
-                    on Hyperledger Fabric.  Design and implementation of smart
-                    contract application framework and SDK in Go with embedded
-                    Lisp dialect developed in-house.  System infrastructure
-                    configuration and application management in AWS with
-                    Terraform and Ansible.  Transition of traditional
-                    infrastructure deployment on AWS EC2 to Kubernetes using
-                    Helm.
+                    on Hyperledger Fabric. Led development of embedded Lisp
+                    interpreter and SDK to streamline smart contract
+                    development for customers.  Configured and maintained
+                    system infrastructure and application management in AWS
+                    with Terraform and Ansible.  Led transition of complex
+                    Fabric distributed system from AWS EC2 to Kubernetes using
+                    Helm.  Implemented platform monitoring and alerting with
+                    Prometheus and Grafana.
                 </para>
             </description>
         </employment>
@@ -64,7 +65,7 @@
                     and deployment methodologies and the tooling to support
                     them.  Dev-Ops tasks including system/service
                     configuration, glue and tooling development, monitoring and
-                    alert system integrations, and responding to critical
+                    alerting system integrations, and responding to critical
                     system events.
                 </para>
             </description>
@@ -97,6 +98,7 @@
                 </para>
             </description>
         </employment>
+        <!--
         <employment>
             <position>Research Assistant</position>
             <employer>David Haussler &amp; Dimitris Achlioptas, Univ of California - Santa Cruz</employer>
@@ -108,6 +110,7 @@
                 </para>
             </description>
         </employment>
+        -->
         <academic>
             <institution>Univ of Califonia - Santa Cruz</institution>
             <dates from="Sept 2004" to="Mar 2009"/>
