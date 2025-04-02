@@ -37,9 +37,24 @@
     </interests>
     <history>
         <employment>
+            <position>Go Software Engineer (Contract)</position>
+            <employer>The Select Group (Comcast)</employer>
+            <dates from="Aug 2023" to="Nov 2024"/>
+            <description>
+                <para>
+                    Design and maintenance for a variety of serverless data
+                    applications in Go leveraging AWS Lambda, Kinesis, Kafka,
+                    NATS JetStream, DynamoDB, and Postgres.  Managing cloud
+                    infrastructure with Terraform and Ansible. Developing
+                    Grafana dashboards for real time monitoring of application,
+                    infrastructure performance, and availability metrics.
+                </para>
+            </description>
+        </employment>
+        <employment>
             <position>Senior Software Engineer</position>
             <employer>Luther Systems, Ltd</employer>
-            <dates from="Nov 2016" to="Present"/>
+            <dates from="Nov 2016" to="Jul 2023"/>
             <description>
                 <para>
                     Development of an enterprise blockchain application
@@ -88,18 +103,6 @@
                     rapid customer rollout.  Responsible for training the
                     internal user base and facilitating adoption of a new
                     product.
-                </para>
-            </description>
-        </employment>
-        <employment>
-            <position>Software Developer (Contract)</position>
-            <employer>LEEPS, Univ of California - Santa Cruz</employer>
-            <dates from="Apr 2011" to="Jul 2011"/>
-            <description>
-                <para>
-                    Development of a Python framework for networked economics
-                    experiments.  Development of state control system using an
-                    atomic log.  Development of clients and UIs.
                 </para>
             </description>
         </employment>
