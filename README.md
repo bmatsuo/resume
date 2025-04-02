@@ -1,6 +1,6 @@
-#Bryan Matsuo's resume
+# Bryan Matsuo's resume
 
-##Generating HTML
+## Generating HTML
 
     ./xml-resume/xml2html.sh resume.xml
     mv resume.html index.html
