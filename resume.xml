@@ -27,7 +27,7 @@
         <skill>Kubernetes/Helm</skill>
         <skill>Terraform</skill>
         <skill>Ansible</skill>
-        <skill>Prometheus/Statsd/Graphite/Grafana</skill>
+        <skill>Prometheus/Grafana</skill>
         <skill>gRPC/Protobuf</skill>
     </skills>
     <!--interests>
