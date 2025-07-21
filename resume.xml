@@ -12,14 +12,14 @@
     </header>
     <skills category="Programming languages">
         <skill>Go</skill>
+        <skill>Python</skill>
+        <skill>Shell (bash)</skill>
         <skill>C/C++</skill>
+        <skill>Ruby</skill>
         <skill>Lisp</skill>
         <skill>Lua</skill>
-        <skill>Ruby</skill>
-        <skill>Python</skill>
         <skill>Scala</skill>
         <skill>Haskell</skill>
-        <skill>Shell (bash)</skill>
     </skills>
     <skills category="Software and technology">
         <skill>Linux</skill>
@@ -30,12 +30,26 @@
         <skill>Prometheus/Statsd/Graphite/Grafana</skill>
         <skill>gRPC/Protobuf</skill>
     </skills>
-    <interests>
+    <!--interests>
         <interest>Pragmatism</interest>
         <interest>Systems programming</interest>
         <interest>Infrastructure as code</interest>
-    </interests>
+    </interests-->
     <history>
+        <employment>
+            <position>Senior Software Engineer</position>
+            <employer>Kunai</employer>
+            <dates from="Jun 2025" to="Current"/>
+            <description>
+                <para>
+                    Collaborating across teams in a large enterprise to update
+                    and integrate software systems following a corporate
+                    merger.  Writing documentation and comprehensive tests for
+                    features and coordinating deployments to minimize adverse
+                    impacts.
+                </para>
+            </description>
+        </employment>
         <employment>
             <position>Go Software Engineer (Contract)</position>
             <employer>The Select Group (Comcast)</employer>
@@ -46,8 +60,8 @@
                     applications in Go leveraging AWS Lambda, Kinesis, Kafka,
                     NATS JetStream, DynamoDB, and Postgres.  Managing cloud
                     infrastructure with Terraform and Ansible. Developing
-                    Grafana dashboards for real time monitoring of application,
-                    infrastructure performance, and availability metrics.
+                    Grafana dashboards for real time monitoring of application
+                    and infrastructure performance metrics.
                 </para>
             </description>
         </employment>
@@ -58,18 +72,17 @@
             <description>
                 <para>
                     Development of an enterprise blockchain application
-                    platform building on Hyperledger Fabric. Development and
-                    maintenance of Go microservices and AWS Lambda functions
-                    connecting users and third-parties with blockchains.
-                    Leading development of embedded Lisp interpreter and Go SDK
-                    to streamline smart contract development for customers.
-                    Configuration and maintenance of system infrastructure and
-                    application management in AWS with Terraform and Ansible.
-                    Extensive Python and Bash scripting for deploying and
-                    managing smart contract operations. Transitioning complex
-                    Fabric distributed systems from AWS EC2 to Kubernetes using
-                    Helm. Implementation of platform monitoring and alerting
-                    with Prometheus and Grafana.
+                    platform. Development and maintenance of Go microservices
+                    and AWS Lambda functions connecting users and third-parties
+                    with blockchains. Leading development of embedded Lisp
+                    interpreter and Go SDK to streamline customer experiences.
+                    Configuration and maintenance of system infrastructure in
+                    AWS with Terraform and Ansible. Extensive Python and Bash
+                    scripting for deploying and managing application
+                    operations. Transitioning complex distributed systems from
+                    AWS EC2 to Kubernetes using Helm. Implementation of
+                    platform monitoring and alerting with Prometheus,
+                    PagerDuty, and Grafana.
                 </para>
             </description>
         </employment>
@@ -80,13 +93,10 @@
             <description>
                 <para>
                     Primary development of backend data processing systems
-                    using Go and Python, along with related maintenance on
-                    existing related systems.  Development of service packaging
-                    and deployment methodologies and the tooling to support
-                    them.  Dev-Ops tasks including system/service
-                    configuration, glue and tooling development, monitoring and
-                    alerting system integrations, and responding to critical
-                    system events.
+                    using Go and Python along with related maintenance on
+                    existing, related systems.  Development of service
+                    packaging, deployment, and monitoring methodologies and
+                    tooling to support them.
                 </para>
             </description>
         </employment>
@@ -96,13 +106,12 @@
             <dates from="Feb 2012" to="Apr 2014"/>
             <description>
                 <para>
-                    Development of OpenID and OAuth integrations for social
-                    networks.  Primary development of backend components of a
-                    user/session management offering.  Participant in product
-                    design discussions.  Responsible for meeting deadlines with
-                    rapid customer rollout.  Responsible for training the
-                    internal user base and facilitating adoption of a new
-                    product.
+                    Development of OpenID and OAuth integrations and backend
+                    components for a user management offering.  Participant in
+                    product design discussions. Responsible for meeting
+                    deadlines with rapid customer rollout.  Responsible for
+                    training the internal user base and facilitating adoption
+                    of a new product.
                 </para>
             </description>
         </employment>

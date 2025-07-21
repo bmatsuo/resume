@@ -300,28 +300,30 @@
     </xsl:template>
 
     <xsl:template name="interests">
-        <div class="section">
-            <div class="row marketing section header">
-                <h4>Interests</h4>
-            </div>
-            <div class="row marketing list">
-                <xsl:for-each select="r:interests">
-                    <xsl:if test="count(@category) != 0">
-                        <div class="row marketing category">
-                            <strong><xsl:value-of select="@category"/></strong>
+        <xsl:if test="count(r:interests/interest) != 0">
+            <div class="section">
+                <div class="row marketing section header">
+                    <h4>Interests</h4>
+                </div>
+                <div class="row marketing list">
+                    <xsl:for-each select="r:interests">
+                        <xsl:if test="count(@category) != 0">
+                            <div class="row marketing category">
+                                <strong><xsl:value-of select="@category"/></strong>
+                            </div>
+                        </xsl:if>
+                        <div class="row marketing items">
+                            <xsl:for-each select="r:interest">
+                                <xsl:value-of select="."/>
+                                <xsl:if test="position() != last()">
+                                    <xsl:text>, </xsl:text>
+                                </xsl:if>
+                            </xsl:for-each>
                         </div>
-                    </xsl:if>
-                    <div class="row marketing items">
-                        <xsl:for-each select="r:interest">
-                            <xsl:value-of select="."/>
-                            <xsl:if test="position() != last()">
-                                <xsl:text>, </xsl:text>
-                            </xsl:if>
-                        </xsl:for-each>
-                    </div>
-                </xsl:for-each>
+                    </xsl:for-each>
+                </div>
             </div>
-        </div>
+        </xsl:if>
     </xsl:template>
 
     <!-- TODO parameterized CSV list generator for skills/interests -->
